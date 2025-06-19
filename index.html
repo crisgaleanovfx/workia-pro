@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Workia — Plataforma Profesional</title>
+
+  <!-- Tipografía Sora desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy: #0B1928;
+      --verde-workia: #2D9C8A;
+      --azul-enfasis: #3C7DFF;
+      --gris-claro: #E5E8EC;
+      --blanco: #FFFFFF;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+  font-family: 'Sora', sans-serif;
+  background: linear-gradient(-45deg, var(--navy) 70%, var(--verde-workia), var(--navy));
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  color: var(--blanco);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  gap: 1.5rem;
+transform: translateY(-30px);
+
+}
+
+
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+    .logo {
+      width: 420px;
+      margin-bottom: 2rem;
+      animation: fadeIn 1.5s ease;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--gris-claro);
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @media (max-width: 600px) {
+      .logo {
+        width: 90px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .subtitle {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🖼️ Reemplaza por tu logo final si es necesario -->
+  <img src="logo-workia.png" alt="Workia Logo" class="logo" />
+
+  <h1>Tu espacio profesional de trabajo</h1>
+  <div class="subtitle">
+    Workia es la nueva plataforma para equipos que valoran la eficiencia, la visibilidad y el control.
+  </div>
+
+</body>
+</html>
